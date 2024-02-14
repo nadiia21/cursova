@@ -55,7 +55,9 @@ public class Controller_for_registration {
             String Register_login = Registration_login.getText().trim();
             String Register_password = Registration_password.getText().trim();
 
-            if(!Register_name.equals("") && !Register_surname.equals("") && !Register_login.equals("") && !Register_password.equals("")){
+            if(!Register_name.equals("") && !Register_surname.equals("") && !Register_login.equals("")
+                    && !Register_password.equals("") && isValidName(Register_name) && isValidName(Register_surname)
+                    && isValidLogin_Password(Register_login) && isValidLogin_Password(Register_password)){
                 RegistrationNewUser();
             } else {
                 shakeField(Registration_name);
@@ -114,6 +116,14 @@ public class Controller_for_registration {
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private boolean isValidName(String name) {
+        return name.matches("[a-zA-Zа-яА-Я]+");
+    }
+
+    private boolean isValidLogin_Password(String login) {
+        return login.matches("[a-zA-Zа-яА-Я0-9]+");
     }
 
 }
