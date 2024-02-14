@@ -20,7 +20,6 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.util.Duration;
-
 import javax.xml.transform.SourceLocator;
 
 public class Controller_for_login {

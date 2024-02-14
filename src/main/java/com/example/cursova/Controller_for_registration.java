@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -55,8 +54,8 @@ public class Controller_for_registration {
             String Register_login = Registration_login.getText().trim();
             String Register_password = Registration_password.getText().trim();
 
-            if(!Register_name.equals("") && !Register_surname.equals("") && !Register_login.equals("")
-                    && !Register_password.equals("") && isValidName(Register_name) && isValidName(Register_surname)
+            if(!Register_name.equals("") && !Register_surname.equals("") && !Register_login.equals("") && !Register_password.equals("")
+                    && isValidName(Register_name) && isValidName(Register_surname)
                     && isValidLogin_Password(Register_login) && isValidLogin_Password(Register_password)){
                 RegistrationNewUser();
             } else {
@@ -119,11 +118,11 @@ public class Controller_for_registration {
     }
 
     private boolean isValidName(String name) {
-        return name.matches("[a-zA-Zа-яА-Я]+");
+        return name.matches("^[a-zA-Zа-яіА-Я\\s]+$") && !name.matches(".*\\d.*");
     }
 
     private boolean isValidLogin_Password(String login) {
-        return login.matches("[a-zA-Zа-яА-Я0-9]+");
+        return login.matches("^[a-zA-Zа-яіА-Я0-9]*$") && login.length() >= 3;
     }
 
 }
