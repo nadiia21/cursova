@@ -1,4 +1,3 @@
-
 package com.example.cursova;
 
 import java.io.IOException;
@@ -17,6 +16,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import javafx.scene.control.Alert;
 
 
 public class Controller_for_registration {
@@ -58,7 +58,18 @@ public class Controller_for_registration {
                     && isValidName(Register_name) && isValidName(Register_surname)
                     && isValidLogin_Password(Register_login) && isValidLogin_Password(Register_password)){
                 RegistrationNewUser();
+                showRegistrationSuccessAlert();
             } else {
+                if (!Register_name.equals("") || !Register_surname.equals("")) {
+                    if (!isValidName(Register_name) || !isValidName(Register_surname)) {
+                        showAlert("Помилка", "Некоректне ім'я або прізвище", "Ім'я та прізвище повинні містити тільки літери і не містити цифри.");
+                    }
+                }
+                if (!Register_login.equals("") || !Register_password.equals("")) {
+                    if (!isValidLogin_Password(Register_login) || !isValidLogin_Password(Register_password)) {
+                        showAlert("Помилка", "Некоректний логін або пароль", "Логін та пароль повинні містити лише літери та цифри і бути не менше 3 символів.");
+                    }
+                }
                 shakeField(Registration_name);
                 shakeField(Registration_surname);
                 shakeField(Registration_login);
@@ -125,4 +136,21 @@ public class Controller_for_registration {
         return login.matches("^[a-zA-Zа-яіА-Я0-9]*$") && login.length() >= 3;
     }
 
+    private void showRegistrationSuccessAlert() {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Успішна реєстрація");
+        alert.setHeaderText(null);
+        alert.setContentText("Ви успішно зареєстровані!");
+
+        alert.showAndWait();
+    }
+
+    private void showAlert(String title, String headerText, String contentText) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(headerText);
+        alert.setContentText(contentText);
+
+        alert.showAndWait();
+    }
 }
