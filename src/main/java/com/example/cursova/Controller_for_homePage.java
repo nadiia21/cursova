@@ -41,6 +41,7 @@ public class Controller_for_homePage {
         img_lake.setOnMouseClicked(event -> openScene("Synevyr.fxml", "Озеро Синевир"));
         img_deer.setOnMouseClicked(event -> openScene("Deer.fxml", "Оленяча ферма"));
         img_waterfall.setOnMouseClicked(event -> openScene("Waterfall.fxml", "Водоспад Шипіт"));
+        img_palace.setOnMouseClicked(event -> openScene("Palace.fxml", "Палац Шенборнів"));
     }
 
     private void openScene(String fxmlFile, String title) {
