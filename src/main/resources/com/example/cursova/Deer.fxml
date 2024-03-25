@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Deer">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="700.0" prefWidth="1550.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/Оленяча%20ферма.jpg" />
+                    </image>
+                </ImageView>
+                <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Історія заснування">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="35.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../img/Оленяча%20ферма_1.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Text layoutX="25.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Історія заснування оленячої ферми датується 1980-ми роками й бере свій початок з далеких земель Приморського краю — території, що є історичною батьківщиною плямистих оленів. Завезли струнконогих красенів до Закарпаття, а точніше — в селище Іза, у спеціально облаштованому фургоні, тоді їх нараховувалось близько 30 осіб. На сьогоднішній день оленяча ферма в місті Хуст налічує зо дві сотні рогатих. Завозили їх з метою отримання лікарських препаратів, активна речовина яких видобувається з ріг парнокопитних. Мова йде про лікарську речовину пантокрин. Застосовується вона в препаратах, що широко використовуються у періоди перевтоми, астенічних станів, анемії, при зниженні імунітету, низькому артеріальному тиску, гіпотонії. Загальнотонізуючі властивості препарату користувались чималим попитом й збагачували ферму з року в рік. Згодом оленяча ферма була на порозі закриття, та все ж цього не сталось. У 2003 році господарство викупив приватний підприємець, який подарував йому нове життя." wrappingWidth="911.7367706298828">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                              <ImageView fitHeight="397.0" fitWidth="329.0" layoutX="555.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../img/Оленяча%20ферма_2.jpeg" />
+                                 </image>
+                              </ImageView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Місцезнаходження та ціна входу">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Text layoutX="26.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ферма знаходиться між селами Іза та Липча Хустського району Закарпаття, недалеко від Хуста. Дістатися можна поїздом, автобусом чи власним автомобілем до районного центру міста Хуст, звідти через село Іза в сторону Міжгір’я близько 8 кілометрів, ферма знаходиться не доїжджаючи села Липча, з правої строни дороги, там є вказівник. На оленячій фермі діють також декілька правил, основним є те, що годувати рогатих можна тільки спеціальними сухарями, які ви можете придбати на території господарства.&#10;&#10;Час для відвідування оленячої форми: понеділок – субота із 9:00 до 18:00, неділя - вихідний. Вхід - 30 грн дорослі, 20 грн діти, корм - 10 грн." wrappingWidth="445.39630126953125">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="490.0" prefWidth="434.0" />
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Цікаві факти">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="338.0" fitWidth="468.0" layoutX="449.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../img/Оленяча%20ферма_3.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Text layoutX="28.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. На території ферми є п’ять озер, то ж коли спека, у літній період, олені занурюються по шию у воду.&#10;2. Морози оленям не страшні, це північні тварини, сплять просто в снігу.&#10;3. Історична батьківщина оленів  – далека Маньчжурія.&#10;4. На фермі олені не мають природних хижаків, тому живуть 17-18 років, тоді як у дикій природі тільки 12.&#10;5. Ферма оленів у селі Іза, входить до переліку унікальних ферм Закарпаття." wrappingWidth="408.0001586914064">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="28.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Чи б’ються олені між собою? Так, але лише у період гону – восени. Сильніший самець може мати у своєму гаремі п’ять, а то й десять – двадцять самок. Слабак же лишається сам. Все просто – природній відбір.&#10;7. Не рекомендують давати оленям їжу, принесену з собою (цукерки, чіпси і тд.).&#10;8. Плямисті олені є дуже розумними створіннями. Якщо на вулиці не тепло, то вони знають що біля воріт фермерства можна зібратись, погрітись та поїсти смачного сіна.&#10;9. На вигляд миролюбні, вони не люблять аби їх лащили, чіпали за шию чи просто гладили." wrappingWidth="905.1771850585938">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
+                <Text layoutX="39.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Одним із найвідоміших туристичних об’єктів Закарпаття є єдина в Україні ферма плямистих оленів. Рідкісні олені з’явились на фермі ще у радянські часи – 1987 року.  А на сьогодні ферма налічує більше 300 оленів, які живуть на 57 гектарах пасовища, лісу і 5 штучних ставків.&#10;&#10;Щоб дізнатись про неї більше обирай вкладку, яка тебе зацікавила -&gt;" wrappingWidth="490.0">
+                    <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Label layoutX="549.0" text="Оленяча ферма" textFill="#294b29">
+            <font>
+                <Font name="Comic Sans MS" size="60.0" />
+            </font>
+        </Label>
+        <Button fx:id="Btn_return" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" text="Повернутись">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -38,22 +38,23 @@ public class Controller_for_homePage {
 
     @FXML
     void initialize() {
-        img_lake.setOnMouseClicked(event -> {
-            Scene scene = img_lake.getScene();
-            Stage stage = (Stage) scene.getWindow();
-            stage.close();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Synevyr.fxml"));
+        img_lake.setOnMouseClicked(event -> openScene("Synevyr.fxml", "Озеро Синевир"));
+        img_deer.setOnMouseClicked(event -> openScene("Deer.fxml", "Оленяча ферма"));
+        img_waterfall.setOnMouseClicked(event -> openScene("Waterfall.fxml", "Водоспад Шипіт"));
+    }
 
-            try {
-                Parent root = fxmlLoader.load();
-                Scene loginScene = new Scene(root);
-                stage.setScene(loginScene);
-                stage.setTitle("Озеро Синевир");
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+    private void openScene(String fxmlFile, String title) {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = fxmlLoader.load();
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) img_lake.getScene().getWindow();
+            stage.setScene(scene);
+            stage.setTitle(title);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 

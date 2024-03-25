@@ -1,5 +1,8 @@
 package com.example.cursova;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,11 +12,8 @@ import javafx.scene.control.Button;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class Synevyr implements Initializable {
+public class Waterfall implements Initializable {
 
     @FXML
     private ResourceBundle resources;
@@ -22,15 +22,15 @@ public class Synevyr implements Initializable {
     private URL location;
 
     @FXML
+    private Button Btn_return;
+
+    @FXML
     private WebView webView;
 
     @FXML
-    private Button Btn_return;
-
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
         WebEngine engine = webView.getEngine();
-        engine.load("https://www.google.com.ua/maps/place/%D0%A1%D0%B8%D0%BD%D0%B5%D0%B2%D0%B8%D1%80/@48.616999,23.6737002,15z/data=!3m1!4b1!4m6!3m5!1s0x4739e3e3f179593f:0xbc869f803c94acef!8m2!3d48.617!4d23.6839999!16s%2Fm%2F027kppy?entry=ttu");
+        engine.load("https://www.google.com.ua/maps/place/%D0%92%D0%BE%D0%B4%D0%BE%D1%81%D0%BF%D0%B0%D0%B4+%D0%A8%D0%B8%D0%BF%D1%96%D1%82/@48.656386,23.2663938,17z/data=!3m1!4b1!4m6!3m5!1s0x47399521188b20cd:0x2e629a1a9da3ce7b!8m2!3d48.656386!4d23.2689687!16s%2Fg%2F12hn2ngq_?entry=ttu");
 
         Btn_return.setOnAction(event -> {
             Scene scene = Btn_return.getScene();
@@ -49,5 +49,5 @@ public class Synevyr implements Initializable {
             }
         });
     }
-}
 
+}
