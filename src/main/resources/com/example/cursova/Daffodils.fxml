@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Daffodils">
+    <children>
+        <AnchorPane layoutY="93.0" prefHeight="700.0" prefWidth="1550.0" style="-fx-background-color: white;">
+            <children>
+                <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../img/Долина%20нарцисів.jpg" />
+                    </image>
+                </ImageView>
+                <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="Легенда заснування">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="25.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../img/Долина%20нарцисів_1.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Text layoutX="25.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="За легендою, колись у сиву прадавнину у Хусті в замку жили князь, княгиня та їхня красуня-донька Руся. На околиці міста проводив життя гончар Іванко. На день Русиного повноліття до замку прийшло багато сановитих візитерів та городян з дорогими гостинцями. Іванкові кортіло теж зробити подарунок — це була дивна ваза, на якій, наче живі, мерехтіли квіти граціозного білого нарциса. У цю мить Іванко та Руся закохались одне в одного. Після того вони стали крадькома зустрічатися у мальовничій долині. Та одного разу князь довідався і так ошаленів, що схопив Іванкову вазу і жбурнув з княжої гори. Ваза розбилася об скелину та розсипалась по долині дрібним дощем. Коли зійшло сонце, то всі побачили, що придолинок вкритий біло-зеленим нарцисовим килимом. Нарциси символізують вічну любов і вірність, яку дівчина відчувала до свого коханого, і перетворюються на квіти, що вічно ростуть у долині." wrappingWidth="911.7367706298828">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <ImageView fitHeight="284.0" fitWidth="386.0" layoutX="556.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../img/Долина%20нарцисів_2.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Місцезнаходження та ціна входу">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <Text layoutX="27.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поблизу села Кіреші (п’ять кілометрів на північ від міста Хуст) знаходиться найбільш популярна туристична атракція Хустського району – Долина нарцисів. Від храму Петра і Павла в с. Кіреші прогулянковий маршрут до долини становить 1,5 км.&#10;&#10;Не варто рвати квіти, або топтати ногами. Пам’ятайте, що другого такого місця в світі не існує. За одну зірвану, або зіпсовану квітку вас оштрафують на 15$.&#10;&#10;Вхід на поле платний. Для дорослих, пенсіонерів – 30 грн., студентів – 25 грн., школярів – 20 грн." wrappingWidth="445.39630126953125">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="490.0" prefWidth="434.0" />
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Цікаві факти">
+                            <content>
+                                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <ImageView fitHeight="338.0" fitWidth="468.0" layoutX="449.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../img/Долина%20нарцисів_3.jpg" />
+                                            </image>
+                                        </ImageView>
+                                        <Text layoutX="28.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Долина нарцисів – це унікальний природний об'єкт, на території якого під охороною перебувають 498 видів рослин, 16 видів орхідей, 24 види метеликів і 104 види птахів.&#10;2. Поблизу долини функціонує &quot;Музей нарцису&quot;, який дбайливо зберігає інформацію про флору і фауну Долини нарцисів.&#10;3. Долина нарцисів входить до міжнародної мережі біосферних резерватів ЮНЕСКО.&#10;4. Долина нарцисів є унікальним об’єктом, це найбільший за площею осередок цвітіння нарцису вузьколистого на території Східної Європи." wrappingWidth="408.0001586914064">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="28.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Долина нарцисів у Закарпатті з’явилась у льодовиковий період. Вчені вважають, що величезний шмат землі разом з унікальними рослинами сповз із гір. Після сходу льоду з гір стікало багато води, що сприяло акліматизації, цвітінню і розповсюдженню нарциса вузьколистого.&#10;6. Спочатку площа долини нарцисів була більшою. Після того, як на території долини почали здійснювати господарську діяльність, площа цвітіння унікальних нарцисів істотно зменшилася.&#10;7. Через зменшення площі цвітіння нарцисів, цю квітку було занесено до Червоної книги України, а Долину нарцисів було передано в управління Карпатському біосферному заповіднику." wrappingWidth="905.1771850585938">
+                                            <font>
+                                                <Font name="Comic Sans MS" size="18.0" />
+                                            </font>
+                                        </Text>
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
+                <Text layoutX="39.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="«Долина нарцисів на Закарпатті – це яскравий зразок симбіозу людини і природи. Адже з давніх давен щороку люди доглядають цю місцину: викошують траву, вирубують верболози, облагороджують територію.&#10;&#10;Щоб дізнатись про неї більше обирай вкладку, яка тебе зацікавила -&gt;" wrappingWidth="490.0">
+                    <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Label layoutX="530.0" text="Долина нарцисів" textFill="#294b29">
+            <font>
+                <Font name="Comic Sans MS" size="60.0" />
+            </font>
+        </Label>
+        <Button fx:id="Btn_return" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" text="Повернутись">
+            <font>
+                <Font name="Comic Sans MS" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
