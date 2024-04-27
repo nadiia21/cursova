@@ -18,7 +18,7 @@
             <children>
                 <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../../../img/Шипіт.jpg" />
+                        <Image url="@img/Шипіт.jpg" />
                     </image>
                 </ImageView>
                 <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
@@ -29,7 +29,7 @@
                                     <children>
                                         <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="25.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../img/Шипіт_1.jpg" />
+                                                <Image url="@img/Шипіт_1.jpg" />
                                             </image>
                                         </ImageView>
                                         <Text layoutX="25.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Легенда каже, що колись у селі Пилипець жили дівчина Марійка – із заможної родини та її коханий Іван – із бідної. Родина дівчини була проти зустрічей з хлопцем та заборонила їм бачитись. Але закохані не зважали на це і почали таємно бачитись на горі Високий Верх. Пізніше мати Марійки дізналась про це, прийшла на місце їх зустрічі та почала сипати прокльони. Через це почалася злива з громом і потоки, що сходили з гір, забрали молоду пару у прірву. На тому місці і виник водоспад. Після того мати постійно приходила на це місце і одного разу почула голос доньки, яка шепотіла слова кохання Івану. Так і виникла назва Шипіт.&#10;Також є версія, що найменування водоспаду походить від слова «шепіт», бо звук спадаючої води нагадує шепотіння." wrappingWidth="911.7367706298828">
@@ -39,7 +39,7 @@
                                         </Text>
                                         <ImageView fitHeight="397.0" fitWidth="329.0" layoutX="565.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../img/Шипіт_2.jpeg" />
+                                                <Image url="@img/Шипіт_2.jpeg" />
                                             </image>
                                         </ImageView>
                                     </children>
@@ -65,7 +65,7 @@
                                     <children>
                                         <ImageView fitHeight="338.0" fitWidth="468.0" layoutX="449.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../img/Шипіт_3.jpg" />
+                                                <Image url="@img/Шипіт_3.jpg" />
                                             </image>
                                         </ImageView>
                                         <Text layoutX="28.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Висота водоспаду 14 метрів.&#10;2. В Карпатах є три водоспада з назвою Шипіт. Але найпопулярніший знаходиться біля селища Пилипець.&#10;3. Водоспад народжується з підземного джерела, що має назву “морське око”.&#10;4. Коли водоспад повноводний, то його шум чути за декілька сотень метрів.&#10;5. Кількість каскадів різної висоти – 5.&#10;6. Відстань до найближчого швидкісного бугельного підйомника – 300 метрів (працює цілий рік)." wrappingWidth="408.0001586914064">

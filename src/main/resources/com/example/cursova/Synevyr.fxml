@@ -1,42 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.web.WebView?>
-
-<AnchorPane prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Synevyr">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?import javafx.scene.control.Button?><?import javafx.scene.control.Separator?><?import javafx.scene.control.Tab?><?import javafx.scene.control.TabPane?><?import javafx.scene.control.TextArea?><?import javafx.scene.image.Image?><?import javafx.scene.image.ImageView?><?import javafx.scene.layout.AnchorPane?><?import javafx.scene.text.Font?><?import javafx.scene.text.Text?><?import javafx.scene.web.WebView?><AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Synevyr" prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;">
    <children>
       <AnchorPane layoutY="93.0" prefHeight="700.0" prefWidth="1550.0" style="-fx-background-color: white;">
          <children>
-            <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="327.0" fitWidth="490.0" fx:id="imageView1" layoutX="39.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../img/Синевир.jpg" />
+                  <Image url="@../../../img/Синевир.jpg"/>
                </image>
             </ImageView>
-            <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane layoutX="586.0" prefHeight="700.0" prefWidth="965.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
                 <Tab text="Легенда виникнення">
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="214.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="327.0" fitWidth="490.0" fx:id="imageView2" layoutX="237.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../img/Синевир_2.jpg" />
+                                    <Image url="@../../../img/Синевир_1.jpg"/>
                                  </image>
                               </ImageView>
-                              <Text layoutX="25.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Легенда про озеро Синевир бере свій початок в часи, коли гори належали заможному графові. Якось землевласник вирішив перевірити роботу своїх підлеглих, та взяв з собою свою єдину дочку-красуню Синь, яку так назвала мати за її сині очі, що нагадували глибоке безмежне море. Поки батько оглядав свої володіння, Синь пішла збирати квіти на полонині, де її поманив за собою спів сопілки, на якій грав молодий пастух Вир. Зачарована неймовірною музикою, дівчина підійшла до хлопця, котрий втратив дар мови від її краси. Синь та Вир покохали одне одного з першого погляду. Це обурило батька дівчини,котрий не зміг змиритися з тим, що його єдина дочка закохалася у простого пастуха. В пориві гніву, він наказав своїм лісорубам скинути на молодого хлопця кам’яну брилу з високої скелі. Почувши страшну новину, Синь прибігла до місця трагедії та гірко заплакала, обійнявши камінь руками. Бідолашна так довго страждала, що на тому місці з’явилося озеро, чисте, немов сльоза, та синє, немов нічне небо, а посеред нього утворився острів, що був вершиною кам’яної брили." wrappingWidth="911.7367706298828">
+                              <TextArea blendMode="HARD_LIGHT" fx:id="textArea" layoutX="4.0" layoutY="6.0" maxWidth="950.0" minHeight="294.0" minWidth="929.0" prefHeight="320.0" prefWidth="950.0" style="-fx-focus-color: -fx-control-inner-background; -fx-text-fill: black; -fx-faint-focus-color: transparent;" wrapText="true">
                                  <font>
-                                    <Font name="Comic Sans MS" size="18.0" />
+                                    <Font name="Comic Sans MS Bold" size="18.0"/>
                                  </font>
-                              </Text>
+                              </TextArea>
                            </children>
                         </AnchorPane>
                      </content>
@@ -45,12 +31,12 @@
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <Text layoutX="25.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якщо хочете зазирнути в душу України,то варто вирушати у Карпати, Міжгірський район Закарпатської області, в гірський масив Внутрішні Ґорґани. Саме там на вас чекатиме озеро Синевир. Легендарне озеро знаходиться на висоті 989 метрів над рівнем моря і утворене внаслідок потужного землетрусу, що спричинив зсув. Так більше 10 тисяч років тому утворилась улоговина, що наповнилась водою з трьох гірських струмків. &#10;&#10;Відвідування території озера Синевир для дорослих – 60 грн, для дітей та студентів – 30 грн. Для транспорту:&#10;з мотоцикла — 30 грн;&#10;з атомобіля — 75 грн;&#10;з мікроавтобуса (менше/більше 8 осіб) — 120/165 грн." wrappingWidth="445.39630126953125">
+                              <WebView fx:id="webView" layoutX="498.0" layoutY="86.0" prefHeight="498.0" prefWidth="434.0"/>
+                              <TextArea blendMode="HARD_LIGHT" fx:id="textArea2" layoutX="10.0" layoutY="90.0" maxWidth="481.0" minHeight="465.0" minWidth="470.0" prefHeight="487.0" prefWidth="481.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
                                  <font>
-                                    <Font name="Comic Sans MS" size="18.0" />
+                                    <Font name="Comic Sans MS Bold" size="18.0"/>
                                  </font>
-                              </Text>
-                              <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="490.0" prefWidth="434.0" />
+                              </TextArea>
                            </children></AnchorPane>
                      </content>
                 </Tab>
@@ -58,43 +44,47 @@
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="299.0" fitWidth="456.0" layoutX="444.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="292.0" fitWidth="441.0" fx:id="imageView3" layoutX="490.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../img/Синевир_1.jpg" />
-                                 </image>
-                              </ImageView>
-                              <Text layoutX="28.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Озеро Синевир ще називають &quot;Морське Око&quot;, бо посередині є острівець, схожий на зіницю ока.&#10;2. Озеро є найбільшим в Україні, що розташоване в горах.&#10;3. Виникло понад 10 тисяч років тому.&#10;4. Має площу 4-5 гектарів, змінюється протягом року.&#10;5. У озері водиться райдужна та струмкова форель, раки." wrappingWidth="381.60007324218765">
+                                    <Image url="@../../../img/Синевир_2.jpg"/>
+                                 </image></ImageView>
+                              <TextArea blendMode="HARD_LIGHT" fx:id="textArea3" layoutX="6.0" layoutY="42.0" maxWidth="484.0" minHeight="280.0" minWidth="466.0" prefHeight="314.0" prefWidth="473.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
                                  <font>
-                                    <Font name="Comic Sans MS" size="18.0" />
+                                    <Font name="Comic Sans MS Bold" size="18.0"/>
                                  </font>
-                              </Text>
-                              <Text layoutX="28.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Схили озера оточують ялинки віком 140—160 років.&#10;7. Середня температура води 10—19 °C, але прогрівається лише 1-2 метри.&#10;8. На території знято український художній фільм жахів &quot;Синевир&quot;, режисерів Олександра та В’ячеслава Альошечкіна.&#10;9. Територією парку та озера Синевир проходять пішохідні туристичні маршрути.&#10;10. Озеро посіло перше місце у конкурсі &quot;Сім природних чудес Закарпаття&quot;&#10;11. На території озера Синевир височить скульптурна композиція &quot;Синь та Вир&quot;, що вирізана з червоного дерева. Скульптори Іван Бродин і Михайло Санич, висота монумента становить 13 метрів." wrappingWidth="905.1771850585938">
+                              </TextArea>
+                              <TextArea blendMode="HARD_LIGHT" fx:id="textArea4" layoutX="8.0" layoutY="363.0" maxWidth="942.0" minHeight="270.0" minWidth="590.0" prefHeight="270.0" prefWidth="942.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
                                  <font>
-                                    <Font name="Comic Sans MS" size="18.0" />
+                                    <Font name="Comic Sans MS Bold" size="18.0"/>
                                  </font>
-                              </Text>
+                              </TextArea>
                            </children></AnchorPane>
                      </content>
                   </Tab>
               </tabs>
             </TabPane>
-            <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
-            <Text layoutX="39.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Озеро Синевир, легенда про яке не дає спокою історикам та дослідникам невідомого вже багато років – одне з наймальовничіших природних водойм України, яке в народі називають «Оком моря» та «Перлиною Карпат».&#10; &#10;Щоб дізнатись про нього більше обирай вкладку, яка тебе зацікавила -&gt;" wrappingWidth="490.0">
+            <Separator halignment="LEFT" layoutX="575.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0"/>
+            <TextArea blendMode="HARD_LIGHT" fx:id="textArea5" layoutX="39.0" layoutY="398.0" maxWidth="490.0" minHeight="222.0" minWidth="490.0" prefHeight="222.0" prefWidth="490.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
                <font>
-                  <Font name="Comic Sans MS" size="20.0" />
+                  <Font name="Comic Sans MS Bold" size="18.0"/>
                </font>
-            </Text>
+            </TextArea>
          </children>
       </AnchorPane>
-      <Label layoutX="558.0" text="Озеро Синевир" textFill="#294b29">
+      <Button fx:id="Btn_return" layoutX="37.0" layoutY="31.0" mnemonicParsing="false" text="Повернутись">
          <font>
-            <Font name="Comic Sans MS" size="60.0" />
-         </font>
-      </Label>
-      <Button fx:id="Btn_return" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" text="Повернутись">
-         <font>
-            <Font name="Comic Sans MS" size="18.0" />
+            <Font name="Comic Sans MS" size="18.0"/>
          </font>
       </Button>
+      <Button fx:id="saveButton" layoutX="1401.0" layoutY="31.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Зберегти">
+         <font>
+            <Font name="Comic Sans MS" size="18.0"/>
+         </font>
+      </Button>
+      <Text fill="#294b29" layoutX="559.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Озеро Синевир" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="60.0"/>
+         </font>
+      </Text>
    </children>
 </AnchorPane>

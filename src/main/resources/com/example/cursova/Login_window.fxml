@@ -51,5 +51,10 @@
             <Font name="Comic Sans MS" size="80.0" />
          </font>
       </Label>
+      <Button fx:id="Admin_panel_button" layoutX="49.0" layoutY="38.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="168.0" text="Адмінська&#10;панель" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,10 +16,8 @@ import javafx.stage.Stage;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.util.Duration;
-import javax.xml.transform.SourceLocator;
+import com.example.cursova.AdminPanel;
 
 public class Controller_for_login {
 
@@ -43,19 +40,26 @@ public class Controller_for_login {
     private Button Registration_button;
 
     @FXML
+    private Button Admin_panel_button;
+
+    @FXML
     void initialize() {
         Login_button.setOnAction(event ->{
             String textLogin = Field_login.getText().trim();
             String textPassword = Field_password.getText().trim();
 
-        if(!textLogin.equals("") && !textPassword.equals("")){
-            UserLogin(textLogin, textPassword);
-        }else shakeField(Field_login);
+            if(!textLogin.equals("") && !textPassword.equals("")){
+                UserLogin(textLogin, textPassword);
+            }else shakeField(Field_login);
             shakeField(Field_password);
         });
 
         Registration_button.setOnAction(event -> {
             OpenNewScene("Registration_window.fxml");
+        });
+
+        Admin_panel_button.setOnAction(event -> {
+            OpenAdminPanel();
         });
     }
 
@@ -129,5 +133,9 @@ public class Controller_for_login {
         stage.setScene(new Scene(root));
         stage.setTitle("Довідник туриста");
         stage.showAndWait();
+    }
+
+    private void OpenAdminPanel() {
+        OpenNewScene("AdminPanel.fxml");
     }
 }
