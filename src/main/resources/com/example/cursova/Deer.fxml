@@ -5,20 +5,20 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Deer">
     <children>
         <AnchorPane layoutY="93.0" prefHeight="700.0" prefWidth="1550.0" style="-fx-background-color: white;">
             <children>
-                <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="imageView1" fitHeight="327.0" fitWidth="490.0" layoutX="41.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@img/Оленяча%20ферма.jpg" />
+                        <Image url="@../../../img/Оленяча%20ферма.jpg" />
                     </image>
                 </ImageView>
                 <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
@@ -27,21 +27,16 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="35.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="imageView2" fitHeight="407.0" fitWidth="492.0" layoutX="235.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@img/Оленяча%20ферма_1.jpg" />
+                                                <Image url="@../../../img/Оленяча%20ферма_1.jpg" />
                                             </image>
                                         </ImageView>
-                                        <Text layoutX="25.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Історія заснування оленячої ферми датується 1980-ми роками й бере свій початок з далеких земель Приморського краю — території, що є історичною батьківщиною плямистих оленів. Завезли струнконогих красенів до Закарпаття, а точніше — в селище Іза, у спеціально облаштованому фургоні, тоді їх нараховувалось близько 30 осіб. На сьогоднішній день оленяча ферма в місті Хуст налічує зо дві сотні рогатих. Завозили їх з метою отримання лікарських препаратів, активна речовина яких видобувається з ріг парнокопитних. Мова йде про лікарську речовину пантокрин. Застосовується вона в препаратах, що широко використовуються у періоди перевтоми, астенічних станів, анемії, при зниженні імунітету, низькому артеріальному тиску, гіпотонії. Загальнотонізуючі властивості препарату користувались чималим попитом й збагачували ферму з року в рік. Згодом оленяча ферма була на порозі закриття, та все ж цього не сталось. У 2003 році господарство викупив приватний підприємець, який подарував йому нове життя." wrappingWidth="911.7367706298828">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                              <ImageView fitHeight="397.0" fitWidth="329.0" layoutX="555.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@img/Оленяча%20ферма_2.jpeg" />
-                                 </image>
-                              </ImageView>
+                              <TextArea fx:id="textArea" blendMode="HARD_LIGHT" layoutX="8.0" layoutY="20.0" maxWidth="938.0" minHeight="317.0" minWidth="938.0" prefHeight="318.0" prefWidth="938.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children>
                                 </AnchorPane>
                             </content>
@@ -50,12 +45,12 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Text layoutX="26.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ферма знаходиться між селами Іза та Липча Хустського району Закарпаття, недалеко від Хуста. Дістатися можна поїздом, автобусом чи власним автомобілем до районного центру міста Хуст, звідти через село Іза в сторону Міжгір’я близько 8 кілометрів, ферма знаходиться не доїжджаючи села Липча, з правої сторони дороги, там є вказівник. На оленячій фермі діють також декілька правил, основним є те, що годувати рогатих можна тільки спеціальними сухарями, які ви можете придбати на території господарства.&#10;&#10;Час для відвідування оленячої форми: понеділок – субота із 9:00 до 18:00, неділя - вихідний. Вхід - 30 грн дорослі, 20 грн діти, корм - 10 грн." wrappingWidth="445.39630126953125">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                                        <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="490.0" prefWidth="434.0" />
+                                        <WebView fx:id="webView" layoutX="492.0" layoutY="60.0" prefHeight="550.0" prefWidth="440.0" />
+                              <TextArea fx:id="textArea2" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="79.0" maxWidth="454.0" minHeight="481.0" minWidth="454.0" prefHeight="500.0" prefWidth="454.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children></AnchorPane>
                             </content>
                         </Tab>
@@ -63,32 +58,32 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <ImageView fitHeight="338.0" fitWidth="468.0" layoutX="449.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="imageView3" fitHeight="338.0" fitWidth="468.0" layoutX="451.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@img/Оленяча%20ферма_3.jpg" />
+                                                <Image url="@../../../img/Оленяча%20ферма_2.jpg" />
                                             </image>
                                         </ImageView>
-                                        <Text layoutX="28.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. На території ферми є п’ять озер, то ж коли спека, у літній період, олені занурюються по шию у воду.&#10;2. Морози оленям не страшні, це північні тварини, сплять просто в снігу.&#10;3. Історична батьківщина оленів  – далека Маньчжурія.&#10;4. На фермі олені не мають природних хижаків, тому живуть 17-18 років, тоді як у дикій природі тільки 12.&#10;5. Ферма оленів у селі Іза, входить до переліку унікальних ферм Закарпаття." wrappingWidth="408.0001586914064">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                                        <Text layoutX="28.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Чи б’ються олені між собою? Так, але лише у період гону – восени. Сильніший самець може мати у своєму гаремі п’ять, а то й десять – двадцять самок. Слабак же лишається сам. Все просто – природній відбір.&#10;7. Не рекомендують давати оленям їжу, принесену з собою (цукерки, чіпси і тд.).&#10;8. Плямисті олені є дуже розумними створіннями. Якщо на вулиці не тепло, то вони знають що біля воріт фермерства можна зібратись, погрітись та поїсти смачного сіна.&#10;9. На вигляд миролюбні, вони не люблять аби їх лащили, чіпали за шию чи просто гладили." wrappingWidth="905.1771850585938">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
+                              <TextArea fx:id="textArea3" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="26.0" maxWidth="430.0" minHeight="346.0" minWidth="430.0" prefHeight="346.0" prefWidth="430.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
+                              <TextArea fx:id="textArea4" blendMode="HARD_LIGHT" layoutX="18.0" layoutY="377.0" maxWidth="926.0" minHeight="259.0" minWidth="926.0" prefHeight="259.0" prefWidth="926.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children></AnchorPane>
                             </content>
                         </Tab>
                     </tabs>
                 </TabPane>
-                <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
-                <Text layoutX="39.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Одним із найвідоміших туристичних об’єктів Закарпаття є єдина в Україні ферма плямистих оленів. Рідкісні олені з’явились на фермі ще у радянські часи – 1987 року.  А на сьогодні ферма налічує більше 300 оленів, які живуть на 57 гектарах пасовища, лісу і 5 штучних ставків.&#10;&#10;Щоб дізнатись про неї більше обирай вкладку, яка тебе зацікавила -&gt;" wrappingWidth="490.0">
-                    <font>
-                        <Font name="Comic Sans MS" size="20.0" />
-                    </font>
-                </Text>
+                <Separator halignment="LEFT" layoutX="577.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
+            <TextArea fx:id="textArea5" blendMode="HARD_LIGHT" layoutX="28.0" layoutY="394.0" maxWidth="515.0" minHeight="271.0" minWidth="515.0" prefHeight="271.0" prefWidth="515.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </TextArea>
             </children>
         </AnchorPane>
         <Label layoutX="549.0" text="Оленяча ферма" textFill="#294b29">
@@ -96,7 +91,12 @@
                 <Font name="Comic Sans MS" size="60.0" />
             </font>
         </Label>
-        <Button fx:id="Btn_return" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" text="Повернутись">
+        <Button fx:id="Btn_return" layoutX="37.0" layoutY="31.0" mnemonicParsing="false" text="Повернутись">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="1401.0" layoutY="31.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Зберегти">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font>

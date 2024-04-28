@@ -153,7 +153,7 @@ public class Synevyr implements Initializable {
         try {
             savedText = "";
             StringBuilder content = new StringBuilder();
-            Files.readAllLines(Paths.get("src/main/java/com/example/cursova/Saved_text.txt")).forEach(line -> content.append(line).append("\n"));
+            Files.readAllLines(Paths.get("src/main/java/com/example/cursova/Saved_text_Synevyr.txt")).forEach(line -> content.append(line).append("\n"));
             String[] parts = content.toString().split("\n\n\n", 5);
             if (parts.length > 0) {
                 textArea.setText(parts[0]);
@@ -212,7 +212,7 @@ public class Synevyr implements Initializable {
 
             String combinedText = text1 + "\n\n\n" + text2 + "\n\n\n" + text3 + "\n\n\n" + text4 + "\n\n\n" + text5;
 
-            FileWriter writer = new FileWriter("src/main/java/com/example/cursova/Saved_text.txt");
+            FileWriter writer = new FileWriter("src/main/java/com/example/cursova/Saved_text_Synevyr.txt");
             writer.write(combinedText);
             writer.close();
 

@@ -42,8 +42,8 @@ public class Controller_for_homePage {
 
     @FXML
     void initialize() {
-        img_lake.setOnMouseClicked(event -> openSynevyrWindow(img_lake, "Synevyr.fxml", "Озеро Синевир"));
-        img_deer.setOnMouseClicked(event -> openScene(img_deer, "Deer.fxml", "Оленяча ферма"));
+        img_lake.setOnMouseClicked(event -> openWindow(img_lake, "Synevyr.fxml", "Озеро Синевир"));
+        img_deer.setOnMouseClicked(event -> openWindow(img_deer, "Deer.fxml", "Оленяча ферма"));
         img_waterfall.setOnMouseClicked(event -> openScene(img_waterfall, "Waterfall.fxml", "Водоспад Шипіт"));
         img_palace.setOnMouseClicked(event -> openScene(img_palace, "Palace.fxml", "Палац Шенборнів"));
         img_daffodils.setOnMouseClicked(event -> openScene(img_daffodils, "Daffodils.fxml", "Долина нарцисів"));
@@ -81,15 +81,26 @@ public class Controller_for_homePage {
         }
     }
 
-    private void openSynevyrWindow(ImageView imageView, String fxmlFile, String title) {
+    private void openWindow(ImageView imageView, String fxmlFile, String title) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = fxmlLoader.load();
-            Synevyr controller = fxmlLoader.getController();
-            controller.loadImage(Synevyr.imagePath1, controller.imageView1);
-            controller.loadImage(Synevyr.imagePath2, controller.imageView2);
-            controller.loadImage(Synevyr.imagePath3, controller.imageView3);
 
+            // Отримуємо контролер від FXMLLoader
+            Object controller = fxmlLoader.getController();
+
+            // Перевіряємо, чи контролер є Deer або Synevyr
+            if (controller instanceof Deer) {
+                Deer deerController = (Deer) controller;
+                deerController.loadImage(Deer.imagePath1, deerController.imageView1);
+                deerController.loadImage(Deer.imagePath2, deerController.imageView2);
+                deerController.loadImage(Deer.imagePath3, deerController.imageView3);
+            } else if (controller instanceof Synevyr) {
+                Synevyr synevyrController = (Synevyr) controller;
+                synevyrController.loadImage(Synevyr.imagePath1, synevyrController.imageView1);
+                synevyrController.loadImage(Synevyr.imagePath2, synevyrController.imageView2);
+                synevyrController.loadImage(Synevyr.imagePath3, synevyrController.imageView3);
+            }
             Scene scene = imageView.getScene();
             scene.setRoot(root);
             Stage stage = (Stage) scene.getWindow();
@@ -99,5 +110,4 @@ public class Controller_for_homePage {
             e.printStackTrace();
         }
     }
-
 }
