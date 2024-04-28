@@ -45,7 +45,7 @@ public class Controller_for_homePage {
         img_lake.setOnMouseClicked(event -> openWindow(img_lake, "Synevyr.fxml", "Озеро Синевир"));
         img_deer.setOnMouseClicked(event -> openWindow(img_deer, "Deer.fxml", "Оленяча ферма"));
         img_waterfall.setOnMouseClicked(event -> openWindow(img_waterfall, "Waterfall.fxml", "Водоспад Шипіт"));
-        img_palace.setOnMouseClicked(event -> openScene(img_palace, "Palace.fxml", "Палац Шенборнів"));
+        img_palace.setOnMouseClicked(event -> openWindow(img_palace, "Palace.fxml", "Палац Шенборнів"));
         img_daffodils.setOnMouseClicked(event -> openScene(img_daffodils, "Daffodils.fxml", "Долина нарцисів"));
         img_ostriches.setOnMouseClicked(event -> openScene(img_ostriches, "Ostriches.fxml", "Страусина ферма"));
 
@@ -101,6 +101,11 @@ public class Controller_for_homePage {
                 waterfallController.loadImage(Waterfall.imagePath1, waterfallController.imageView1);
                 waterfallController.loadImage(Waterfall.imagePath2, waterfallController.imageView2);
                 waterfallController.loadImage(Waterfall.imagePath3, waterfallController.imageView3);
+            }else if (controller instanceof Palace) {
+                Palace palaceController = (Palace) controller;
+                palaceController.loadImage(Palace.imagePath1, palaceController.imageView1);
+                palaceController.loadImage(Palace.imagePath2, palaceController.imageView2);
+                palaceController.loadImage(Palace.imagePath3, palaceController.imageView3);
             }
             Scene scene = imageView.getScene();
             scene.setRoot(root);
