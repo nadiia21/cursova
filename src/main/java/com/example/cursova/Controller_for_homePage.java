@@ -44,7 +44,7 @@ public class Controller_for_homePage {
     void initialize() {
         img_lake.setOnMouseClicked(event -> openWindow(img_lake, "Synevyr.fxml", "Озеро Синевир"));
         img_deer.setOnMouseClicked(event -> openWindow(img_deer, "Deer.fxml", "Оленяча ферма"));
-        img_waterfall.setOnMouseClicked(event -> openScene(img_waterfall, "Waterfall.fxml", "Водоспад Шипіт"));
+        img_waterfall.setOnMouseClicked(event -> openWindow(img_waterfall, "Waterfall.fxml", "Водоспад Шипіт"));
         img_palace.setOnMouseClicked(event -> openScene(img_palace, "Palace.fxml", "Палац Шенборнів"));
         img_daffodils.setOnMouseClicked(event -> openScene(img_daffodils, "Daffodils.fxml", "Долина нарцисів"));
         img_ostriches.setOnMouseClicked(event -> openScene(img_ostriches, "Ostriches.fxml", "Страусина ферма"));
@@ -85,11 +85,7 @@ public class Controller_for_homePage {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = fxmlLoader.load();
-
-            // Отримуємо контролер від FXMLLoader
             Object controller = fxmlLoader.getController();
-
-            // Перевіряємо, чи контролер є Deer або Synevyr
             if (controller instanceof Deer) {
                 Deer deerController = (Deer) controller;
                 deerController.loadImage(Deer.imagePath1, deerController.imageView1);
@@ -100,6 +96,11 @@ public class Controller_for_homePage {
                 synevyrController.loadImage(Synevyr.imagePath1, synevyrController.imageView1);
                 synevyrController.loadImage(Synevyr.imagePath2, synevyrController.imageView2);
                 synevyrController.loadImage(Synevyr.imagePath3, synevyrController.imageView3);
+            }else if (controller instanceof Waterfall) {
+                Waterfall waterfallController = (Waterfall) controller;
+                waterfallController.loadImage(Waterfall.imagePath1, waterfallController.imageView1);
+                waterfallController.loadImage(Waterfall.imagePath2, waterfallController.imageView2);
+                waterfallController.loadImage(Waterfall.imagePath3, waterfallController.imageView3);
             }
             Scene scene = imageView.getScene();
             scene.setRoot(root);
