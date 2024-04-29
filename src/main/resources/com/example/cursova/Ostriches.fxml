@@ -58,7 +58,7 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <ImageView fx:id="imageView3" fitHeight="327.0" fitWidth="437.0" layoutX="481.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="imageView3" fitHeight="327.0" fitWidth="437.0" layoutX="481.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../img/Страусина%20ферма_2.jpg" />
                                             </image>
