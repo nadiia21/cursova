@@ -47,7 +47,7 @@ public class Controller_for_homePage {
         img_waterfall.setOnMouseClicked(event -> openWindow(img_waterfall, "Waterfall.fxml", "Водоспад Шипіт"));
         img_palace.setOnMouseClicked(event -> openWindow(img_palace, "Palace.fxml", "Палац Шенборнів"));
         img_daffodils.setOnMouseClicked(event -> openScene(img_daffodils, "Daffodils.fxml", "Долина нарцисів"));
-        img_ostriches.setOnMouseClicked(event -> openScene(img_ostriches, "Ostriches.fxml", "Страусина ферма"));
+        img_ostriches.setOnMouseClicked(event -> openWindow(img_ostriches, "Ostriches.fxml", "Страусина ферма"));
 
         Btn_return.setOnAction(event -> {
             if (AdminPanel.isAdminLoggedIn()) {
@@ -106,6 +106,11 @@ public class Controller_for_homePage {
                 palaceController.loadImage(Palace.imagePath1, palaceController.imageView1);
                 palaceController.loadImage(Palace.imagePath2, palaceController.imageView2);
                 palaceController.loadImage(Palace.imagePath3, palaceController.imageView3);
+            }else if (controller instanceof Ostriches) {
+                Ostriches ostrichesController = (Ostriches) controller;
+                ostrichesController.loadImage(Ostriches.imagePath1, ostrichesController.imageView1);
+                ostrichesController.loadImage(Ostriches.imagePath2, ostrichesController.imageView2);
+                ostrichesController.loadImage(Ostriches.imagePath3, ostrichesController.imageView3);
             }
             Scene scene = imageView.getScene();
             scene.setRoot(root);

@@ -5,20 +5,20 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 <?import javafx.scene.web.WebView?>
 
 <AnchorPane prefHeight="790.0" prefWidth="1550.0" style="-fx-background-color: BFD8AF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.Ostriches">
     <children>
         <AnchorPane layoutY="93.0" prefHeight="700.0" prefWidth="1550.0" style="-fx-background-color: white;">
             <children>
-                <ImageView fitHeight="327.0" fitWidth="490.0" layoutX="39.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="imageView1" fitHeight="327.0" fitWidth="490.0" layoutX="41.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@img/Страусина%20ферма.jpg" />
+                        <Image url="@../../../img/Страусина%20ферма.jpg" />
                     </image>
                 </ImageView>
                 <TabPane layoutX="588.0" prefHeight="700.0" prefWidth="962.0" tabClosingPolicy="UNAVAILABLE">
@@ -27,21 +27,16 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <ImageView fitHeight="407.0" fitWidth="492.0" layoutX="35.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="imageView2" fitHeight="304.0" fitWidth="456.0" layoutX="253.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@img/Страусина%20ферма_1.jpg" />
+                                                <Image url="@../../../img/Страусина%20ферма_1.jpg" />
                                             </image>
                                         </ImageView>
-                                        <Text layoutX="25.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="У 2002 році незвичну ферму заснував Василь Перець. Складнощі почалися уже при ввезені птахів, адже, як пояснює пан Василь, на той час страуси як домашня птиця у законодавстві не вказувалися. Три доби тварин тримали на кордоні, внаслідок чого одна птаха загинула.Після того як екзотичних мешканців пропустили пригоди не закінчилися. Власник розповідає, що потрібно було із загиблої особини надати частини тіла на експертизу: перевірити чи не завезли якусь хворобу. Але, на щастя, все обійшлося. Перших страусів він привіз зі Словаччини та одразу помітив, що їм підходить місцевий клімат. Птахи почали розмножуватися, тому зараз на території у відкритих загонах живе близько 35 птахів двох видів — африканський страус та австралійський ему.Спочатку ферма планувалася як місце для розмноження страусів для подальшого продажу. Але сюди почали приїжджати туристи для тісного спілкування з найбільшими птахами у світі. Тому відвідування ферми швидко перетворилося на еко-туризм." wrappingWidth="911.7367706298828">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                                        <ImageView fitHeight="397.0" fitWidth="329.0" layoutX="563.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@img/Страусина%20ферма_3.jpeg" />
-                                            </image>
-                                        </ImageView>
+                              <TextArea fx:id="textArea" blendMode="HARD_LIGHT" layoutX="10.0" layoutY="8.0" maxWidth="930.0" minHeight="336.0" minWidth="930.0" prefHeight="336.0" prefWidth="930.0" style="-fx-focus-color: -fx-control-inner-background; -fx-text-fill: black; -fx-faint-focus-color: transparent;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children>
                                 </AnchorPane>
                             </content>
@@ -50,12 +45,12 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <Text layoutX="27.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Якщо ви їдете до ферми машиною, краще робити це трасою Київ — Львів — Чоп (Е-50/М-06). У селі Нижні Ворота поверніть у сторону смт Воловець (14 км), потім у сторону Міжгір’я (38 км).&#10;&#10;Прямим автобусним сполученням до страусиної ферми можна дістатися з автовокзалів Міжгір’я, Воловець, Хуст, Свалява, Мукачево, Ужгород і Львів. Зручним варіантом є подорож поїздом Ужгородського напрямку до ст. Воловець. Далі треба буде доїхати автобусом.&#10;&#10;Вартість: дорослий квиток — 30 грн, дитячий — 15 грн&#10;&#10;Графік роботи: щоденно, з 9:00 до 20:00" wrappingWidth="445.39630126953125">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                                        <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="490.0" prefWidth="434.0" />
+                                        <WebView fx:id="webView" layoutX="487.0" layoutY="60.0" prefHeight="550.0" prefWidth="440.0" />
+                              <TextArea fx:id="textArea2" blendMode="HARD_LIGHT" layoutX="6.0" layoutY="80.0" maxWidth="462.0" minHeight="510.0" minWidth="462.0" prefHeight="510.0" prefWidth="462.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children></AnchorPane>
                             </content>
                         </Tab>
@@ -63,32 +58,32 @@
                             <content>
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
-                                        <ImageView fitHeight="338.0" fitWidth="468.0" layoutX="449.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="imageView3" fitHeight="327.0" fitWidth="437.0" layoutX="481.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@img/Страусина%20ферма_3.jpg" />
+                                                <Image url="@../../../img/Страусина%20ферма_2.jpg" />
                                             </image>
                                         </ImageView>
-                                        <Text layoutX="28.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Сьогодні на території ферми проживає близько 26 птахів.&#10;2. Можна придбати яйце страуса або перо на згадку про цю подорож.&#10;3. Ферма розташована на чотирьох гектарах землі, з яких гектар – суто для страусів. На інших частинах вирощують люцерну, яку дуже полюбляють птахи.&#10;4. Страуси їдять все, що можуть проковтнути(одного разу це був телефон відвідувача).&#10;5. При ударі страуса на один сантиметр тіла людини припадає сила в 50 кг, тому заходити до них у вольєр забороняють." wrappingWidth="408.0001586914064">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
-                                        <Text layoutX="28.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Продають страусенят дуже маленькими, тому що саме тоді вони найкраще переносять дорогу.&#10;7. Пір’я купують діти на екскурсіях. Була історія, що замовили 600 пір’їн. Як виявилося, з них робили сукню для нареченої.&#10;8. Страуси розмножуються сезонно, і кожен шлюбний період триває приблизно від 6 до 8 місяців.&#10;9. У страусів чудовий слух і гострий зір, а ще вони – спритні бігуни. У разі небезпеки розвивають швидкість до 70 кілометрів на годину. &#10;10. Страуси травоїдні, вживають переважно траву та пагони дерев, але інколи їдять комах і земноводних." wrappingWidth="905.1771850585938">
-                                            <font>
-                                                <Font name="Comic Sans MS" size="18.0" />
-                                            </font>
-                                        </Text>
+                              <TextArea fx:id="textArea3" blendMode="HARD_LIGHT" layoutX="8.0" layoutY="29.0" maxWidth="461.0" minHeight="351.0" minWidth="461.0" prefHeight="351.0" prefWidth="461.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
+                              <TextArea fx:id="textArea4" blendMode="HARD_LIGHT" layoutX="8.0" layoutY="390.0" maxWidth="930.0" minHeight="270.0" minWidth="929.0" prefHeight="270.0" prefWidth="930.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="18.0" />
+                                 </font>
+                              </TextArea>
                                     </children></AnchorPane>
                             </content>
                         </Tab>
                     </tabs>
                 </TabPane>
-                <Separator layoutX="562.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
-                <Text layoutX="39.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Відпочинок на Закарпатті настільки різноманітний і цікавий, що часом не знаєш, що вибрати. Тепер у всіх туристів з`явилася можливість   побачити абсолютно незвичайних   для України птахів - страусів. На пам`ять про таку прогулянку можна придбати перо чи яйце.&#10;&#10;Щоб дізнатись про неї більше обирай вкладку, яка тебе зацікавила -&gt;" wrappingWidth="490.0">
-                    <font>
-                        <Font name="Comic Sans MS" size="20.0" />
-                    </font>
-                </Text>
+                <Separator halignment="LEFT" layoutX="577.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
+            <TextArea fx:id="textArea5" blendMode="HARD_LIGHT" layoutX="28.0" layoutY="384.0" maxWidth="515.0" minHeight="296.0" minWidth="515.0" prefHeight="296.0" prefWidth="515.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </TextArea>
             </children>
         </AnchorPane>
         <Label layoutX="526.0" text="Страусина ферма" textFill="#294b29">
@@ -96,10 +91,15 @@
                 <Font name="Comic Sans MS" size="60.0" />
             </font>
         </Label>
-        <Button fx:id="Btn_return" layoutX="37.0" layoutY="23.0" mnemonicParsing="false" text="Повернутись">
+        <Button fx:id="Btn_return" layoutX="37.0" layoutY="31.0" mnemonicParsing="false" text="Повернутись">
             <font>
                 <Font name="Comic Sans MS" size="18.0" />
             </font>
         </Button>
+      <Button fx:id="saveButton" layoutX="1401.0" layoutY="31.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Зберегти">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
