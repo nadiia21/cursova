@@ -32,7 +32,7 @@
                                                 <Image url="@../../../img/Палац%20шенборнів_1.jpeg" />
                                             </image>
                                         </ImageView>
-                              <TextArea fx:id="textArea" blendMode="HARD_LIGHT" layoutX="6.0" layoutY="25.0" maxWidth="934.0" minHeight="310.0" minWidth="933.0" prefHeight="310.0" prefWidth="934.0" style="-fx-focus-color: -fx-control-inner-background; -fx-text-fill: black; -fx-faint-focus-color: transparent;" wrapText="true">
+                              <TextArea fx:id="textArea" blendMode="HARD_LIGHT" layoutX="6.0" layoutY="25.0" maxWidth="934.0" minHeight="310.0" minWidth="933.0" prefHeight="310.0" prefWidth="934.0" style="-fx-focus-color: -fx-control-inner-background; -fx-text-fill: black; -fx-faint-focus-color: transparent;" text="текст" wrapText="true">
                                  <font>
                                     <Font name="Comic Sans MS Bold" size="18.0" />
                                  </font>
@@ -46,7 +46,7 @@
                                 <AnchorPane prefHeight="200.0" prefWidth="200.0">
                                     <children>
                                         <WebView fx:id="webView" layoutX="492.0" layoutY="65.0" prefHeight="550.0" prefWidth="440.0" />
-                              <TextArea fx:id="textArea2" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="97.0" maxWidth="482.0" minHeight="485.0" minWidth="475.0" prefHeight="485.0" prefWidth="475.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                              <TextArea fx:id="textArea2" blendMode="HARD_LIGHT" layoutX="14.0" layoutY="97.0" maxWidth="482.0" minHeight="485.0" minWidth="475.0" prefHeight="485.0" prefWidth="475.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" text="текст" wrapText="true">
                                  <font>
                                     <Font name="Comic Sans MS Bold" size="18.0" />
                                  </font>
@@ -63,12 +63,12 @@
                                                 <Image url="@../../../img/Палац%20Шенборнів_2.jpg" />
                                             </image>
                                         </ImageView>
-                              <TextArea fx:id="textArea3" blendMode="HARD_LIGHT" layoutX="8.0" layoutY="34.0" maxWidth="456.0" minHeight="314.0" minWidth="440.0" prefHeight="320.0" prefWidth="456.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                              <TextArea fx:id="textArea3" blendMode="HARD_LIGHT" layoutX="8.0" layoutY="34.0" maxWidth="456.0" minHeight="314.0" minWidth="440.0" prefHeight="320.0" prefWidth="456.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" text="текст" wrapText="true">
                                  <font>
                                     <Font name="Comic Sans MS Bold" size="18.0" />
                                  </font>
                               </TextArea>
-                              <TextArea fx:id="textArea4" blendMode="HARD_LIGHT" layoutX="9.0" layoutY="365.0" maxWidth="934.0" minHeight="276.0" minWidth="924.0" prefHeight="286.0" prefWidth="934.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+                              <TextArea fx:id="textArea4" blendMode="HARD_LIGHT" layoutX="9.0" layoutY="365.0" maxWidth="934.0" minHeight="276.0" minWidth="924.0" prefHeight="286.0" prefWidth="934.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" text="текст" wrapText="true">
                                  <font>
                                     <Font name="Comic Sans MS Bold" size="18.0" />
                                  </font>
@@ -79,7 +79,7 @@
                     </tabs>
                 </TabPane>
                 <Separator halignment="LEFT" layoutX="577.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="22.0" />
-            <TextArea fx:id="textArea5" blendMode="HARD_LIGHT" layoutX="28.0" layoutY="392.0" maxWidth="515.0" minHeight="262.0" minWidth="515.0" prefHeight="262.0" prefWidth="515.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" wrapText="true">
+            <TextArea fx:id="textArea5" blendMode="HARD_LIGHT" layoutX="28.0" layoutY="392.0" maxWidth="515.0" minHeight="262.0" minWidth="515.0" prefHeight="262.0" prefWidth="515.0" style="-fx-background-color: white; -fx-border-color: white; -fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: transparent; -fx-text-fill: black; -fx-background: white;" text="текст" wrapText="true">
                <font>
                   <Font name="Comic Sans MS Bold" size="18.0" />
                </font>
