@@ -9,22 +9,27 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cursova.AdminPanel">
     <children>
-        <TextField fx:id="adminUsernameField" layoutX="693.0" layoutY="302.0" promptText="Логін">
+        <TextField fx:id="adminUsernameField" layoutX="652.0" layoutY="332.0" promptText="Логін">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font></TextField>
-        <PasswordField fx:id="adminPasswordField" layoutX="693.0" layoutY="395.0" promptText="Пароль">
+        <PasswordField fx:id="adminPasswordField" layoutX="652.0" layoutY="425.0" promptText="Пароль">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font></PasswordField>
-        <Button fx:id="adminLoginButton" layoutX="775.0" layoutY="513.0" mnemonicParsing="false" text="Ввійти" textFill="#294b29">
+        <Button fx:id="adminLoginButton" layoutX="734.0" layoutY="538.0" mnemonicParsing="false" text="Ввійти" textFill="#294b29">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
          </font></Button>
-      <Text fill="#294b29" layoutX="609.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адмінська панель">
+      <Text fill="#294b29" layoutX="568.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Адмінська панель">
          <font>
             <Font name="Comic Sans MS" size="48.0" />
          </font>
       </Text>
+      <Button fx:id="Btn_return" layoutX="54.0" layoutY="33.0" mnemonicParsing="false" text="Повернутись">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

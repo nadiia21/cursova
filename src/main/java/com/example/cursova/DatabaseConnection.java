@@ -16,8 +16,9 @@ public class DatabaseConnection extends Configs {
      }
 
  public  void  RegisterUser(User NewUser) throws SQLException, ClassNotFoundException {
-         String insert = "INSERT INTO " + Constants.TABLE_USER + "(" + Constants.USERNAME_USER + "," + Constants.FIRSTNAME_USER
-                 + "," + Constants.SURNAME_USER + "," + Constants.PASSWORD_USER + ")" + "VALUES(?,?,?,?)";
+         String insert = "INSERT INTO " + Constants.TABLE_USER + "(" + Constants.USERNAME_USER + "," +
+                 Constants.FIRSTNAME_USER + "," + Constants.SURNAME_USER + "," + Constants.PASSWORD_USER
+                 + ")" + "VALUES(?,?,?,?)";
     try {
         PreparedStatement statement = getConnection().prepareStatement(insert);
         statement.setString(1, NewUser.getUserName());

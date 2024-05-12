@@ -29,6 +29,9 @@ public class AdminPanel {
     private Button adminLoginButton;
 
     @FXML
+    private Button Btn_return;
+
+    @FXML
     void initialize() {
         adminLoginButton.setOnAction(event -> {
             String username = adminUsernameField.getText().trim();
@@ -37,7 +40,7 @@ public class AdminPanel {
             try {
                 if (validateAdmin(username, password)) {
                     isAdminLoggedIn = true;
-                    openHomePage();
+                    openPage("Home_page.fxml", "Головна сторінка");
                 } else {
                     Alert alert = new Alert(Alert.AlertType.ERROR);
                     alert.setTitle("Login Error");
@@ -49,12 +52,16 @@ public class AdminPanel {
                 e.printStackTrace();
             }
         });
+
+        Btn_return.setOnAction(event -> {
+            openPage("Login_window.fxml", "Вхід");
+        });
     }
 
     private boolean validateAdmin(String username, String password) throws SQLException, ClassNotFoundException {
         DatabaseConnection databaseConnection = new DatabaseConnection();
         Connection connection = databaseConnection.getConnection();
-        String query = "SELECT * FROM admins WHERE username = ? AND password = ?";
+        String query = "SELECT * FROM " + Constants.TABLE_ADMIN + " WHERE " + Constants.USERNAME_ADMIN + " = ? AND " + Constants.PASSWORD_ADMIN + " = ?";
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         preparedStatement.setString(1, username);
         preparedStatement.setString(2, password);
@@ -62,20 +69,23 @@ public class AdminPanel {
         return resultSet.next();
     }
 
-    private void openHomePage() {
+    @FXML
+    private void openPage(String fxmlFileName, String title) {
         adminLoginButton.getScene().getWindow().hide();
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Home_page.fxml"));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFileName));
         try {
             Parent root = fxmlLoader.load();
-            Scene loginScene = new Scene(root);
-            Stage loginStage = new Stage();
-            loginStage.setScene(loginScene);
-            loginStage.setTitle("Головна сторінка");
-            loginStage.show();
+            Scene scene = new Scene(root);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle(title);
+            stage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     public static boolean isAdminLoggedIn() {
         return isAdminLoggedIn;

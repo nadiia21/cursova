@@ -17,6 +17,7 @@ import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
+import javafx.scene.control.Alert;
 import com.example.cursova.AdminPanel;
 
 public class Controller_for_login {
@@ -55,11 +56,11 @@ public class Controller_for_login {
         });
 
         Registration_button.setOnAction(event -> {
-            OpenNewScene("Registration_window.fxml");
+            OpenNewScene("Registration_window.fxml", "Реєстрація");
         });
 
         Admin_panel_button.setOnAction(event -> {
-            OpenAdminPanel();
+            OpenNewScene("AdminPanel.fxml", "Адмінська панель");
         });
     }
 
@@ -92,14 +93,24 @@ public class Controller_for_login {
         } catch (SQLException e){
             e.printStackTrace();
         }
+
         if (Counter >= 1) {
-            OpenScene("Home_page.fxml");
+            OpenNewScene("Home_page.fxml", "Головна сторінка");
+        } else {
+            showAlert("Помилка", "Ви не зареєстровані", "Будь ласка, перевірте ваші логін та пароль.");
         }
     }
 
-    private void OpenNewScene (String NewWindow){
-        Registration_button.getScene().getWindow().hide();
+    private void showAlert(String title, String header, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(header);
+        alert.setContentText(content);
+        alert.showAndWait();
+    }
 
+    private void OpenNewScene(String NewWindow, String title){
+        Registration_button.getScene().getWindow().hide();
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource(NewWindow));
 
@@ -112,30 +123,7 @@ public class Controller_for_login {
         Parent root = fxmlLoader.getRoot();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
-        stage.setTitle("Реєстрація");
+        stage.setTitle(title);
         stage.showAndWait();
-    }
-
-    private void OpenScene (String New_Window){
-        Login_button.getScene().getWindow().hide();
-
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource(New_Window));
-
-        try{
-            fxmlLoader.load();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-
-        Parent root = fxmlLoader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(root));
-        stage.setTitle("Довідник туриста");
-        stage.showAndWait();
-    }
-
-    private void OpenAdminPanel() {
-        OpenNewScene("AdminPanel.fxml");
     }
 }
